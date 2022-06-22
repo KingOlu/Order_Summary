@@ -1,0 +1,138 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-image: url(images/pattern-background-desktop.svg);
+            background-color: hsl(225, 100%, 94%);
+            background-repeat: no-repeat;
+            background-blend-mode: normal;
+            font-family: 'Space Mono', monospace;
+            background-size: 100% auto;
+        }
+        
+        .content {
+            text-align: center;
+            background-color: white;
+            border-radius: 15px 15px 15px 15px;
+        }
+        
+        .upper img {
+            border-radius: 15px 15px 0 0;
+            width: 400px;
+        }
+        
+        .lower {
+            padding: 2rem 4rem 2rem 4rem;
+            width: 400px;
+            border-radius: 0 0 15px 15px;
+            background-color: white;
+        }
+        
+        .lower h1 {
+            color: hsl(228, 45%, 44%);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .lower p {
+            color: hsl(224, 23%, 55%);
+            margin-bottom: 1rem;
+        }
+        
+        .mid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: hsl(225, 100%, 98%);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .left span {
+            margin-right: 15px;
+        }
+        
+        .annual {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .right {
+            cursor: pointer;
+        }
+        
+        .right a:hover {
+            text-decoration: none;
+            color: hsl(228, 45%, 44%);
+        }
+        
+        .payment {
+            width: 100%;
+            color: white;
+            padding: 15px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: hsl(245, 75%, 52%);
+            margin-bottom: 1rem;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .payment:hover {
+            background-color: hsl(228, 45%, 44%);
+        }
+        
+        .cancel {
+            text-decoration: none;
+            color: hsl(224, 23%, 55%);
+            cursor: pointer;
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        @media only screen and (max-width:600px) {
+            body {
+                background-image: url(images/pattern-background-mobile.svg);
+                background-size: 100% auto;
+                justify-content: center;
+                align-items: center;
+            }
+            .content {
+                height: 100vh;
+                width: 80%;
+                height: 36rem;
+            }
+            .attribution {
+                margin-top: 10px;
+            }
+            .upper img {
+                width: 315px;
+            }
+            .lower {
+                padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                width: 315px;
+            }
+        }
